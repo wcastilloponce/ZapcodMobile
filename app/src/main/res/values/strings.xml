@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">ZapcodMobile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- GENERAL -->
+    <string name="nombre_archivo_preferences">Preferences</string>
+    <string name="nombre_variable_user">user</string>
+    <string name="error_onresponse">Error en onResponse: </string>
+    <string name="error_onfailure">Error en onFailure: </string>
+    <string name="file_provider">com.zamineperu.android.fileprovider</string>
+
+    <!-- MENUS -->
+    <string name="menu_logout">Salir</string>
+    <string name="menu_home">Ir al home</string>
+    <string name="menu_otros">Otras opciones</string>
+
+    <!-- MENU SERVICIOS -->
+    <string name="menu_servicios_opcion_ordenes_servicio">Órdenes de servicio</string>
+
+    <!-- MENUS SSOMA -->
+    <string name="menu_ssoma_opcion_registro_inspecciones">Registro de inspección</string>
+    <string name="menu_ssoma_inspecciones_finalizadas">Inspecciones finalizadas</string>
+    <string name="menu_ssoma_inspecciones_pendientes">Inspecciones pendientes</string>
+    <string name="menu_ssoma_adjuntar_archivo_inspeccion">Adjuntar inspeccion</string>
+    <string name="menu_ssoma_attach_picture_observation">Adjuntar imagen/foto</string>
+
+    <!-- ACTIVITY LOGIN -->
+    <string name="login_error_vacios">Debe ingresar usuario y contraseña</string>
+    <string name="login_error_incorrectos">Usuario y/o contraseña incorrectos</string>
+    <string name="login_btn_ingresar">Ingresar</string>
+    <string name="login_tv_usuario">Usuario</string>
+    <string name="login_tv_password">Password</string>
+
+    <!-- ACTIVITY HOME -->
+    <string name="home_titulo_toolbar">Home</string>
+    <string name="home_opcion_ssoma">SSOMA</string>
+    <string name="home_opcion_servicios">Servicios</string>
+
+    <!-- ACTIVITY SERVICE DASHBOARD -->
+    <string name="sv_dashboard_titulo_toolbar">Servicios</string>
+
+    <!--ACTIVITY FIRMA DIGITAL-->
+    <string name="sv_firma_digital_btn_limpiar">Limpiar</string>
+    <string name="sv_firma_digital_btn_guardar">Guardar</string>
+
+    <!-- FRAGMENT ORDEN SERVICIO -->
+    <string name="sv_orden_servicio_titulo">Lista OS por firmar</string>
+
+    <!-- FRAGMENT ORDEN SERVICIO DETAIL -->
+    <string name="sv_orden_servicio_detalle_variable_firma">firma_cliente</string>
+    <string name="sv_orden_servicio_detalle_variable_signed">signed</string>
+    <string name="sv_orden_servicio_detalle_variable_os_id">orden_servicio_id</string>
+    <string name="sv_orden_servicio_detalle_msj_pdf_ok">Se generó el archivo </string>
+    <string name="sv_orden_servicio_detalle_msj_pdf_error">Error al generar el archivo: </string>
+    <string name="sv_orden_servicio_detalle_msj_pdf_sin_firma">Imagen vacía. No se actualizará en la BD</string>
+    <string name="sv_orden_servicio_detalle_msj_pdf_denegado">No se puede crear el archivo.</string>
+    <string name="sv_orden_servicio_detalle_permiso_sdcard_titulo">Acceso a memoria externa</string>
+    <string name="sv_orden_servicio_detalle_permiso_sdcard_texto">Es necesario aceptar permiso</string>
+    <string name="sv_orden_servicio_detalle_permiso_sdcard_aceptar">Aceptar</string>
+    <string name="sv_orden_servicio_permiso_sdcard_cancelar">Cancelar</string>
+    <string name="sv_orden_servicio_detalle_btn_firma">Firma del cliente</string>
+    <string name="sv_orden_servicio_detalle_btn_generar_pdf">Generar PDF</string>
+
+    <!-- LAYOUT ITEM LISTA OS -->
+    <string name="sv_orden_servicio_item_os_codigo">Código OS: </string>
+    <string name="sv_orden_servicio_item_os_equipo">Equipo: </string>
+    <string name="sv_orden_servicio_item_os_inicio">Fecha de inicio: </string>
+    <string name="sv_orden_servicio_item_os_descripcion">Descripción: </string>
+
+    <!-- LAYOUT FORMATO ORDEN SERVICIO PDF -->
+    <string name="sv_orden_servicio_formato_pdf_titulo">FORMATO DE TRABAJO REALIZADO</string>
+    <string name="sv_orden_servicio_formato_pdf_fecha">FECHA: </string>
+    <string name="sv_orden_servicio_formato_pdf_otmina">O.T. MINA: </string>
+    <string name="sv_orden_servicio_formato_pdf_turno">TURNO: </string>
+    <string name="sv_orden_servicio_formato_pdf_equipo">EQUIPO: </string>
+    <string name="sv_orden_servicio_formato_pdf_status">STATUS: </string>
+    <string name="sv_orden_servicio_formato_pdf_ubicacion">UBICACIÓN: </string>
+    <string name="sv_orden_servicio_formato_pdf_trabajo_realizado">TRABAJO REALIZADO: </string>
+    <string name="sv_orden_servicio_formato_pdf_componente_sistema">COMPONENTE / SISTEMA: </string>
+    <string name="sv_orden_servicio_formato_pdf_hora_inicio">INICIO: </string>
+    <string name="sv_orden_servicio_formato_pdf_hora_fin">FIN: </string>
+    <string name="sv_orden_servicio_formato_pdf_horometro">HORÓMETRO: </string>
+    <string name="sv_orden_servicio_formato_pdf_tipo_trabajo">TIPO DE TRABAJO: </string>
+    <string name="sv_orden_servicio_formato_pdf_descripcion_trabajos_realizados">DESCRIPCIÓN DE TRABAJOS REALIZADOS</string>
+    <string name="sv_orden_servicio_formato_pdf_supervisor_operativo">SUPERVISOR OPERATIVO ZAMINE</string>
+    <string name="sv_orden_servicio_formato_pdf_supervisor_seguridad">SUPERVISOR SSO ZAMINE</string>
+    <string name="sv_orden_servicio_formato_pdf_supervisor_cliente">SUPERVISOR A CARGO SMCV</string>
+    <string name="sv_orden_servicio_formato_pdf_trabajador">TRABAJADOR</string>
+    <string name="sv_orden_servicio_formato_pdf_horas">HORAS</string>
+    <string name="sv_orden_servicio_formato_pdf_horas_trabajadas">HORAS HOMBRE TOTALES: </string>
+    <string name="sv_orden_servicio_formato_pdf_firma_supervisor_cliente">SUPERVISOR SMCV</string>
+    <string name="sv_orden_servicio_formato_pdf_firma_supervisor_zamine">SUPERVISOR ZAMINE</string>
+
+    <!-- ACTIVITY SERVICE DASHBOARD -->
+    <string name="ss_dashboard_titulo_toolbar">Ssoma</string>
+
+    <!-- FRAGMENT REGISTRO INSPECCIONES -->
+    <string name="ss_inspecciones_registro_inspeccion_titulo">Registro de inspecciones</string>
+    <string name="ss_inspecciones_registro_inspeccion_titulo_proyecto">Proyecto</string>
+    <string name="ss_inspecciones_registro_inspeccion_titulo_anio">Año</string>
+    <string name="ss_inspecciones_registro_inspeccion_titulo_tipo">Tipo de inspección</string>
+    <string name="ss_inspecciones_registro_inspeccion_titulo_inspeccion">Inspección</string>
+    <string name="ss_inspecciones_registro_inspeccion_titulo_responsable">Responsable</string>
+    <string name="ss_inspecciones_registro_inspeccion_titulo_fecha">Fecha de ejecución</string>
+    <string name="ss_inspecciones_registro_inspeccion_titulo_ubicacion">Ubicación</string>
+    <string name="ss_inspecciones_registro_inspeccion_titulo_descripcion">Descripción</string>
+    <string name="ss_inspecciones_registro_inspeccion_btn_registrar">Registrar inspección</string>
+
+    <!-- FRAGMENT LISTA INSPECCIONES FINALIZADAS -->
+    <string name="ss_lista_inspecciones_titulo">Lista de inspecciones finalizadas</string>
+
+    <!-- FRAGMENT LISTA INSPECCIONES PENDIENTES -->
+    <string name="ss_lista_inspecciones_pendientes_titulo">Lista de inspecciones pendientes</string>
+
+    <!-- FRAGMENT REGISTRO OBSERVACION -->
+    <string name="formato_hora_nueva_imagen">yyyyMMdd_HHmmss</string>
+    <string name="formato_imagen_mayuscula">JPEG_</string>
+    <string name="formato_imagen_minuscula">.jpg</string>
+
+</resources>

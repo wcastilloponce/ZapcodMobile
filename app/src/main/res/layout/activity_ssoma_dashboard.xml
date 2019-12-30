@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Modules.Ssoma.SsomaDashboardActivity">
+
+    <include layout="@layout/actionbar_layout" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/ssoma_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Layout real de la actividad -->
+        <include layout="@layout/ssoma_dashboard_layout" />
+
+        <!-- Layout del menú lateral (Navigation View) -->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/ssoma_navview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header_navview"
+            app:menu="@menu/ss_navview_menu" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:paddingBottom="30dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/service_os_pdf_img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_pdf"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sv_orden_servicio_formato_pdf_titulo"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/service_os_pdf_img_logo"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/service_os_pdf_fecha_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:text="@string/sv_orden_servicio_formato_pdf_fecha"/>
+
+            <TextView
+                android:id="@+id/service_os_pdf_otmina_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:text="@string/sv_orden_servicio_formato_pdf_otmina"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/service_os_pdf_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/border_table"
+                android:padding="2dp"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/service_os_pdf_otmina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textSize="10sp"
+                android:text="                        "
+                android:background="@drawable/border_table"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/service_os_pdf_turno_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/sv_orden_servicio_formato_pdf_turno"
+                android:textStyle="bold"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/service_os_pdf_equipo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/sv_orden_servicio_formato_pdf_equipo"
+                android:textStyle="bold"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/service_os_pdf_turno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_table"
+                android:padding="2dp"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/service_os_pdf_equipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textSize="10sp"
+                android:background="@drawable/border_table"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/service_os_pdf_status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/sv_orden_servicio_formato_pdf_fecha"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:layout_toRightOf="@id/service_os_pdf_turno"/>
+
+            <TextView
+                android:id="@+id/service_os_pdf_ubicacion_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sv_orden_servicio_formato_pdf_ubicacion"
+                android:textStyle="bold"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/service_os_pdf_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="10sp"
+                android:background="@drawable/border_table"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/service_os_pdf_ubicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:background="@drawable/border_table"
+                android:maxLines="3"
+                android:padding="2dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/service_os_pdf_trabajo_realizado_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_weight="0.1"
+            android:text="@string/sv_orden_servicio_formato_pdf_trabajo_realizado"/>
+
+        <TextView
+            android:id="@+id/service_os_pdf_trabajo_realizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textSize="10sp"
+            android:background="@drawable/border_table"
+            android:padding="2dp"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/service_os_pdf_componente_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginRight="25dp"
+            android:text="@string/sv_orden_servicio_formato_pdf_componente_sistema"/>
+
+        <TextView
+            android:id="@+id/service_os_pdf_componente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/border_table"
+            android:padding="2dp"
+            android:text="                                                                                                            "
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.15">
+            <TextView
+                android:id="@+id/service_os_inicio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:text="@string/sv_orden_servicio_formato_pdf_hora_inicio"/>
+
+            <TextView
+                android:id="@+id/service_os_horometro_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:text="@string/sv_orden_servicio_formato_pdf_horometro"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.35">
+
+            <TextView
+                android:id="@+id/service_os_pdf_inicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="10sp"
+                android:background="@drawable/border_table"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/service_os_horometro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:background="@drawable/border_table"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.15">
+
+            <TextView
+                android:id="@+id/service_os_pdf_fin_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/sv_orden_servicio_formato_pdf_hora_fin"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/service_os_pdf_tipo_trabajo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sv_orden_servicio_formato_pdf_tipo_trabajo"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.35">
+
+            <TextView
+                android:id="@+id/service_os_pdf_fin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="10sp"
+                android:background="@drawable/border_table"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/service_os_pdf_tipo_trabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:background="@drawable/border_table"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:gravity="center"
+            android:background="@drawable/border_table">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="@string/sv_orden_servicio_formato_pdf_descripcion_trabajos_realizados"
+                android:layout_span="4"/>
+        </TableRow>
+        <TableRow
+            android:background="@drawable/border_table">
+            <TextView
+                android:id="@+id/service_os_pdf_descripcion"
+                android:lines="5"
+                android:textSize="10sp"
+                android:layout_span="4"/>
+        </TableRow>
+        <TableRow
+            android:background="@drawable/border_table">
+            <TextView
+                android:text="@string/sv_orden_servicio_formato_pdf_supervisor_operativo"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/service_os_pdf_supervisor_operacion"
+                android:paddingLeft="20dp"
+                android:textSize="10sp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/border_table">
+            <TextView
+                android:text="@string/sv_orden_servicio_formato_pdf_supervisor_seguridad"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/service_os_pdf_supervisor_seguridad"
+                android:paddingLeft="20dp"
+                android:textSize="10sp"/>
+        </TableRow>
+        <TableRow
+            android:background="@drawable/border_table">
+            <TextView
+                android:text="@string/sv_orden_servicio_formato_pdf_supervisor_cliente"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/service_os_pdf_supervisor_cliente"
+                android:paddingLeft="20dp"
+                android:textSize="10sp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/service_od_pdf_lista_trabajadores"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:background="@drawable/border_table">
+            <TextView
+                android:text="@string/sv_orden_servicio_formato_pdf_trabajador"
+                android:textSize="10sp"
+                android:layout_weight="0.40"/>
+            <TextView
+                android:text="@string/sv_orden_servicio_formato_pdf_hora_inicio"
+                android:textSize="10sp"
+                android:layout_weight="0.25"/>
+            <TextView
+                android:text="@string/sv_orden_servicio_formato_pdf_hora_fin"
+                android:textSize="10sp"
+                android:layout_weight="0.25"/>
+            <TextView
+                android:text="@string/sv_orden_servicio_formato_pdf_horas"
+                android:textSize="10sp"
+                android:layout_weight="0.10"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sv_orden_servicio_formato_pdf_horas_trabajadas"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/service_os_pdf_total_horas_trabajadores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="bottom"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/service_os_pdf_firma_cliente"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/sv_orden_servicio_formato_pdf_firma_supervisor_cliente"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="bottom"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/service_os_pdf_firma_zamine"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FF909090" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/sv_orden_servicio_formato_pdf_firma_supervisor_zamine"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ss_registro_inspecciones_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:text="@string/ss_inspecciones_registro_inspeccion_titulo"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss_registro_inspecciones_select_proyecto"
+            android:layout_below="@id/ss_registro_inspecciones_titulo">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_lista_proyectos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="@string/ss_inspecciones_registro_inspeccion_titulo_proyecto"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss_registro_inspecciones_select_anio"
+            android:layout_below="@id/ss_registro_inspecciones_select_proyecto">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_lista_anios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="@string/ss_inspecciones_registro_inspeccion_titulo_anio"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss_registro_inspecciones_select_tipo_inspeccion"
+            android:layout_below="@+id/ss_registro_inspecciones_select_anio">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_lista_tipos_inspeccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="@string/ss_inspecciones_registro_inspeccion_titulo_tipo"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss_registro_inspecciones_select_inspeccion"
+            android:layout_below="@+id/ss_registro_inspecciones_select_tipo_inspeccion">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_lista_inspecciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="@string/ss_inspecciones_registro_inspeccion_titulo_inspeccion"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss_registro_inspecciones_select_responsable"
+            android:layout_below="@+id/ss_registro_inspecciones_select_inspeccion">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_lista_responsables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:hint="@string/ss_inspecciones_registro_inspeccion_titulo_responsable"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss_registro_inspecciones_fecha_ejecucion"
+            android:layout_below="@+id/ss_registro_inspecciones_select_responsable">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etxt_fecha_ejecucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:focusable="false"
+                android:enabled="false"
+                android:hint="@string/ss_inspecciones_registro_inspeccion_titulo_fecha"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss_registro_inspecciones_ubicacion"
+            android:layout_below="@+id/ss_registro_inspecciones_fecha_ejecucion">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_lista_ubicaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="@string/ss_inspecciones_registro_inspeccion_titulo_ubicacion" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss_registro_inspecciones_descripcion"
+            android:layout_below="@+id/ss_registro_inspecciones_ubicacion">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etxt_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="@string/ss_inspecciones_registro_inspeccion_titulo_descripcion" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/ss_btn_registrar_inspeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/ss_registro_inspecciones_descripcion"
+            android:theme="@style/RaisedButton"
+            android:text="@string/ss_inspecciones_registro_inspeccion_btn_registrar"/>
+
+        <TextView
+            android:id="@+id/ss_etxt_error_registro_inspeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:layout_below="@+id/ss_btn_registrar_inspeccion"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

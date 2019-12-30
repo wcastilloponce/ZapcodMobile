@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ssoma_attach_format"
+        android:orderInCategory="1"
+        android:title="Agregar imagen"
+        android:icon="@drawable/baseline_attach_file_white_18dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ssoma_home"
+        android:orderInCategory="9"
+        android:title="@string/menu_home"
+        android:icon="@drawable/baseline_home_white_18dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ssoma_logout"
+        android:orderInCategory="10"
+        android:title="@string/menu_logout"
+        android:icon="@drawable/baseline_exit_to_app_white_18dp"
+        app:showAsAction="always" />
+</menu>
